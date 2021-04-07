@@ -31,7 +31,34 @@ namespace CSharp.Bonus.HomeWork.Task8
                     
                 }
 
+                Console.WriteLine("Enter a value for the indices of second array: ");
+                for (int i =0; i< secondArry.Length; i++)
+                {
+                    int valueForIndices = int.Parse(Console.ReadLine());
+                    secondArry[i] = valueForIndices;
+                }
 
+
+                if (arrLarge1 == arrLarge2)
+                {
+                    for(int i = 0; i < firstArry.Length; i++)
+                    {
+                        if (firstArry[i] == secondArry[i])
+                        {
+                            Console.WriteLine("The arrays are eqaul");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("The arrays are not eqaul");
+                            break;
+                        }
+                    }
+                    
+                }else
+                {
+                    Console.WriteLine("The Arrays are not equal");
+                }
                 
             }
             else
